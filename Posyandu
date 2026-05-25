@@ -1,0 +1,35 @@
+{
+  "name": "Posyandu",
+  "type": "object",
+  "properties": {
+    "nama_posyandu": {
+      "type": "string",
+      "description": "Nama Posyandu"
+    },
+    "desa_id": {
+      "type": "string",
+      "description": "ID Desa"
+    },
+    "nama_desa": {
+      "type": "string",
+      "description": "Nama Desa (cache)"
+    },
+    "rt_rw": {
+      "type": "string",
+      "description": "RT/RW"
+    },
+    "nama_kader": {
+      "type": "string",
+      "description": "Nama Kader"
+    },
+    "status_aktif": {
+      "type": "boolean",
+      "default": true,
+      "description": "Status Aktif"
+    }
+  },
+  "required": [
+    "nama_posyandu",
+    "desa_id"
+  ]
+}

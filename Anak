@@ -1,0 +1,114 @@
+{
+  "name": "Anak",
+  "type": "object",
+  "properties": {
+    "nama_anak": {
+      "type": "string",
+      "description": "Nama Anak"
+    },
+    "nik_anak": {
+      "type": "string",
+      "description": "NIK Anak (16 digit)"
+    },
+    "jenis_kelamin": {
+      "type": "string",
+      "enum": [
+        "Laki-laki",
+        "Perempuan"
+      ],
+      "description": "Jenis Kelamin"
+    },
+    "tempat_lahir": {
+      "type": "string",
+      "description": "Tempat Lahir"
+    },
+    "tanggal_lahir": {
+      "type": "string",
+      "format": "date",
+      "description": "Tanggal Lahir"
+    },
+    "nama_ibu": {
+      "type": "string",
+      "description": "Nama Ibu"
+    },
+    "nik_ibu": {
+      "type": "string",
+      "description": "NIK Ibu"
+    },
+    "nama_ayah": {
+      "type": "string",
+      "description": "Nama Ayah"
+    },
+    "nik_ayah": {
+      "type": "string",
+      "description": "NIK Ayah"
+    },
+    "dusun": {
+      "type": "string",
+      "description": "Nama Dusun"
+    },
+    "rt": {
+      "type": "string",
+      "description": "RT"
+    },
+    "rw": {
+      "type": "string",
+      "description": "RW"
+    },
+    "desa_id": {
+      "type": "string",
+      "description": "ID Desa"
+    },
+    "nama_desa": {
+      "type": "string",
+      "description": "Nama Desa"
+    },
+    "posyandu_id": {
+      "type": "string",
+      "description": "ID Posyandu"
+    },
+    "nama_posyandu": {
+      "type": "string",
+      "description": "Nama Posyandu"
+    },
+    "nomor_kk": {
+      "type": "string",
+      "description": "Nomor Kartu Keluarga"
+    },
+    "bb_lahir": {
+      "type": "number",
+      "description": "Berat Badan Lahir (gram)"
+    },
+    "pb_lahir": {
+      "type": "number",
+      "description": "Panjang Badan Lahir (cm)"
+    },
+    "status_imd": {
+      "type": "boolean",
+      "default": false,
+      "description": "Status IMD (Inisiasi Menyusu Dini)"
+    },
+    "status_vitamin_a": {
+      "type": "boolean",
+      "default": false,
+      "description": "Status Mendapat Vitamin A"
+    },
+    "status_bpjs": {
+      "type": "boolean",
+      "default": false,
+      "description": "Status Memiliki BPJS"
+    },
+    "status_aktif": {
+      "type": "boolean",
+      "default": true,
+      "description": "Status Aktif"
+    }
+  },
+  "required": [
+    "nama_anak",
+    "tanggal_lahir",
+    "jenis_kelamin",
+    "desa_id",
+    "posyandu_id"
+  ]
+}

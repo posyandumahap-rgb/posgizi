@@ -1,0 +1,112 @@
+{
+  "name": "Penimbangan",
+  "type": "object",
+  "properties": {
+    "anak_id": {
+      "type": "string",
+      "description": "ID Anak"
+    },
+    "nama_anak": {
+      "type": "string",
+      "description": "Nama Anak"
+    },
+    "desa_id": {
+      "type": "string",
+      "description": "ID Desa"
+    },
+    "nama_desa": {
+      "type": "string",
+      "description": "Nama Desa"
+    },
+    "posyandu_id": {
+      "type": "string",
+      "description": "ID Posyandu"
+    },
+    "nama_posyandu": {
+      "type": "string",
+      "description": "Nama Posyandu"
+    },
+    "bulan": {
+      "type": "number",
+      "description": "Bulan penimbangan (1-12)"
+    },
+    "tahun": {
+      "type": "number",
+      "description": "Tahun penimbangan"
+    },
+    "berat_badan": {
+      "type": "number",
+      "description": "Berat Badan (kg)"
+    },
+    "tinggi_badan": {
+      "type": "number",
+      "description": "Tinggi/Panjang Badan (cm)"
+    },
+    "lingkar_kepala": {
+      "type": "number",
+      "description": "Lingkar Kepala (cm)"
+    },
+    "umur_bulan": {
+      "type": "number",
+      "description": "Umur dalam bulan saat penimbangan"
+    },
+    "jenis_kelamin": {
+      "type": "string",
+      "description": "Jenis Kelamin"
+    },
+    "tanggal_penimbangan": {
+      "type": "string",
+      "format": "date",
+      "description": "Tanggal Penimbangan"
+    },
+    "status_bbu": {
+      "type": "string",
+      "enum": [
+        "Gizi Buruk",
+        "Gizi Kurang",
+        "Gizi Baik",
+        "Risiko Gizi Lebih"
+      ],
+      "description": "Status BB/U"
+    },
+    "status_tbu": {
+      "type": "string",
+      "enum": [
+        "Sangat Pendek",
+        "Pendek",
+        "Normal",
+        "Tinggi"
+      ],
+      "description": "Status TB/U"
+    },
+    "status_bbtb": {
+      "type": "string",
+      "enum": [
+        "Sangat Kurus",
+        "Kurus",
+        "Normal",
+        "Gemuk"
+      ],
+      "description": "Status BB/TB"
+    },
+    "status_stunting": {
+      "type": "string",
+      "enum": [
+        "Stunting",
+        "Tidak Stunting"
+      ],
+      "description": "Status Stunting"
+    },
+    "petugas_input": {
+      "type": "string",
+      "description": "Nama Petugas Input"
+    }
+  },
+  "required": [
+    "anak_id",
+    "bulan",
+    "tahun",
+    "berat_badan",
+    "tinggi_badan"
+  ]
+}

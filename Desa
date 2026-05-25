@@ -1,0 +1,25 @@
+{
+  "name": "Desa",
+  "type": "object",
+  "properties": {
+    "nama_desa": {
+      "type": "string",
+      "description": "Nama Desa"
+    },
+    "kode_desa": {
+      "type": "string",
+      "description": "Kode Desa"
+    },
+    "kecamatan": {
+      "type": "string",
+      "description": "Nama Kecamatan"
+    },
+    "nama_bidan": {
+      "type": "string",
+      "description": "Nama Bidan Desa"
+    }
+  },
+  "required": [
+    "nama_desa"
+  ]
+}
